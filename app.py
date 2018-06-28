@@ -17,8 +17,8 @@ def index():
     # response.set_cookie('answer','42')
     # return response
     # return redirect('http://www.baidu.com')
-    return render_template('super.html')
-    # return render_template('index.html')
+    # return render_template('super.html')
+    return render_template('index.html')
 
 
 @app.route('/user/<name>')
