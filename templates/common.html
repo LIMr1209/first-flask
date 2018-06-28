@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% import 'macros.html' as macro %}
+    <ul>
+        {% for i in range(5) %}
+            {{ macro.render_macro(i) }}
+        {% endfor %}
+    </ul>
+</body>
+</html>
