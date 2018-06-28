@@ -1,13 +1,26 @@
-from flask import Flask, request, redirect, render_template, flash, make_response
+from flask import Flask, request, redirect, render_template, flash, make_response, url_for, session
 from flask.ext.script import Manager
 from flask.ext.bootstrap import Bootstrap
+from flask.ext.moment import Moment
+from flask.ext.wtf import Form
+from wtforms import StringField, SubmitField
+from wtforms.validators import Required
+from datetime import datetime
+
+
+class NameForm(Form):
+    name = StringField('what is your name?', validators=[Required()])
+    submit = SubmitField('Submit')
+
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'hard to guess string'
 bootstrap = Bootstrap(app)
+moment = Moment(app)
 manger = Manager(app)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     # return 'Hello World!'
     # user_agent = request.headers.get('User-Agent')
@@ -18,7 +31,14 @@ def index():
     # return response
     # return redirect('http://www.baidu.com')
     # return render_template('super.html')
-    return render_template('index.html')
+    form = NameForm()
+    if form.validate_on_submit():
+        old_name = session.get('name')
+        if not old_name and old_name != form.name.data:
+            flash('Looks like you have changed your name!')
+        session['name'] = form.name.data
+        return redirect(url_for('index'))
+    return render_template('index.html', form=form, name=session.get('name'))
 
 
 @app.route('/user/<name>')
