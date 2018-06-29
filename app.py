@@ -21,17 +21,18 @@ class NameForm(Form):
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite') + '?check_same_thread=False'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/first-flask'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite') + '?check_same_thread=False'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/first-flask'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['MAIL_SERVER'] = 'smtp.126.com'
 app.config['MAIL_PORT'] = 25
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'aaa1058169464@126.com'
-app.config['MAIL_PASSWORD'] = 'lizhenbin1209'
+app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
+app.config['FLASKY_ADMIN'] = os.environ.get('FLASKY_ADMIN')
 # app.config['FLASKY_MAIL_SUBJECT_PREFIX'] = ['Flasky']
-# app.config['FLASKY_MAIL_SENDER'] = 'Flasky Admin <aaa1058169464@126.com>'
+app.config['FLASKY_MAIL_SENDER'] = os.environ.get('MAIL_USERNAME')
 db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
@@ -70,11 +71,11 @@ def send_async_email(app, msg):
 
 
 def send_email(to, subject, template, **kwargs):
-    msg = Message('Hello' + subject, sender='aaa1058169464@126.com',
+    msg = Message('Hello' + subject, sender=app.config['FLASKY_MAIL_SENDER'],
                   recipients=[to])
     msg.body = render_template(template + '.txt', **kwargs)
     msg.html = render_template(template + '.html', **kwargs)
-    t1 = Thread(target=send_async_email,args=[app,msg])
+    t1 = Thread(target=send_async_email, args=[app, msg])
     t1.start()
     return t1
 
@@ -105,7 +106,7 @@ def index():
             session['known'] = True
         session['name'] = form.name.data
         form.name.data = ''
-        send_email('aaa1058169464@126.com', 'New User', 'mail/new_user'.format(), user=user)
+        send_email(app.config['FLASKY_ADMIN'], 'New User', 'mail/new_user'.format(), user=user)
         return redirect(url_for('index'))
     return render_template('index.html', form=form, name=session.get('name'), known=session.get('known', False))
 
