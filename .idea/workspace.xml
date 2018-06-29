@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d2c6d4c-90e2-4ed4-b8bc-85098a3e95ad" name="默认的" comment="">
+    <list default="true" id="1d2c6d4c-90e2-4ed4-b8bc-85098a3e95ad" name="默认的" comment="数据库">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
@@ -34,8 +34,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            <state relative-caret-position="402">
+              <caret line="66" column="24" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="24" />
               <folding>
                 <element signature="e#0#99#0" expanded="true" />
               </folding>
@@ -87,7 +87,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1025" />
@@ -194,16 +194,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="bottom" id="调试" order="5" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="6" visible="true" weight="0.66902405" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.66902405" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.43988684" />
       <window_info anchor="bottom" id="运行" order="2" weight="0.3281471" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1930295" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1930295" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.3297587" />
       <window_info anchor="right" id="SciView" order="1" weight="0.3297587" />
@@ -630,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        <state relative-caret-position="402">
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="24" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
           </folding>
