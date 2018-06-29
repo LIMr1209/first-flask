@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/first_flask$first_flask.coverage" NAME="first-flask Coverage Results" MODIFIED="1530262143626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/first_flask$first_flask.coverage" NAME="first-flask Coverage Results" MODIFIED="1530273156300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="66" column="24" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="24" />
+            <state relative-caret-position="234">
+              <caret line="73" column="24" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="24" />
               <folding>
                 <element signature="e#0#99#0" expanded="true" />
               </folding>
@@ -87,7 +87,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1025" />
@@ -203,8 +203,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.66902405" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.43988684" />
-      <window_info anchor="bottom" id="运行" order="2" weight="0.3281471" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1930295" />
+      <window_info active="true" anchor="bottom" id="运行" order="2" visible="true" weight="0.3281471" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1930295" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.3297587" />
       <window_info anchor="right" id="SciView" order="1" weight="0.3297587" />
@@ -631,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="66" column="24" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="24" />
+        <state relative-caret-position="234">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="24" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
           </folding>
