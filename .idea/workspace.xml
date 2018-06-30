@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/first_flask$first_flask.coverage" NAME="first-flask Coverage Results" MODIFIED="1530273156300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/first_flask$first_flask.coverage" NAME="first-flask Coverage Results" MODIFIED="1530320057781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="73" column="24" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="24" />
+            <state relative-caret-position="-2112">
+              <caret line="33" column="63" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="63" />
               <folding>
                 <element signature="e#0#99#0" expanded="true" />
               </folding>
@@ -157,12 +157,19 @@
   </component>
   <component name="RunManager">
     <configuration name="first-flask" type="Python.FlaskServer" factoryName="Flask server">
+      <option name="additionalOptions" value="" />
+      <option name="application" value="" />
       <module name="first-flask" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <envs>
+        <env name="MAIL_USERNAME" value="aaa1058169464@126.com" />
+        <env name="MAIL_PASSWORD" value="lizhenbin1209" />
+        <env name="FLASKY_ADMIN" value="aaa1058169464@126.com" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ST\Envs\flask\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -204,56 +211,56 @@
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.66902405" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.43988684" />
       <window_info active="true" anchor="bottom" id="运行" order="2" visible="true" weight="0.3281471" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1930295" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19571045" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.3297587" />
       <window_info anchor="right" id="SciView" order="1" weight="0.3297587" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="数据库" weight="0.3297587" />
       <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="16" visible="true" weight="0.32956153" />
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="15" visible="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="10" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32956153" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="16" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32956153" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="right" id="数据库" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="16" visible="true" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="运行" order="3" visible="true" weight="0.3281471" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1930295" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="17" visible="true" weight="0.32956153" />
-      <window_info anchor="right" id="SciView" order="2" weight="0.3297587" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="调试" order="6" />
+      <window_info anchor="bottom" id="Run" order="11" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1930295" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="11" />
-      <window_info anchor="bottom" id="Message" order="9" />
-      <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32956153" />
-      <window_info anchor="right" id="Database" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.43988684" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="调试" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="数据库" order="0" weight="0.3297587" />
-      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="运行" order="3" visible="true" weight="0.3281471" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.33521923" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
+      <window_info anchor="right" id="Database" order="1" weight="0.3297587" />
+      <window_info anchor="right" id="数据库" order="0" weight="0.3297587" />
+      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="17" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.3297587" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32956153" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.43988684" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +274,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="数据库" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -545,18 +562,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/migrations/env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/91ab142b-a18f-46a8-9985-265bed78841f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0c57c58f-0f3f-49b5-ab15-488b38241143/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/500.html">
@@ -631,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="24" />
+        <state relative-caret-position="-2112">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="63" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
           </folding>

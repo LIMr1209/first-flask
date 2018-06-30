@@ -30,7 +30,7 @@ app.config['MAIL_PORT'] = 25
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
-# app.config['FLASKY_MAIL_SUBJECT_PREFIX'] = ['Flasky']
+app.config['FLASKY_MAIL_SUBJECT_PREFIX'] = '[Flasky]'
 app.config['FLASKY_MAIL_SENDER'] = 'Flasky Admin <aaa1058169464@126.com>'
 app.config['FLASKY_ADMIN'] = os.environ.get('FLASKY_ADMIN')
 db = SQLAlchemy(app)
@@ -71,7 +71,7 @@ def send_async_email(app, msg):
 
 
 def send_email(to, subject, template, **kwargs):
-    msg = Message('Hello' + subject, sender=app.config['FLASKY_MAIL_SENDER'],
+    msg = Message(app.config['FLASKY_MAIL_SUBJECT_PREFIX'] + subject, sender=app.config['FLASKY_MAIL_SENDER'],
                   recipients=[to])
     msg.body = render_template(template + '.txt', **kwargs)
     msg.html = render_template(template + '.html', **kwargs)
@@ -106,7 +106,8 @@ def index():
             session['known'] = True
         session['name'] = form.name.data
         form.name.data = ''
-        send_email(app.config['FLASKY_ADMIN'],  'New User', 'mail/new_user'.format(), user=user)
+        if app.config['FLASKY_ADMIN']:
+            send_email(app.config['FLASKY_ADMIN'],  'New User', 'mail/new_user', user=user)
         return redirect(url_for('index'))
     return render_template('index.html', form=form, name=session.get('name'), known=session.get('known', False))
 
